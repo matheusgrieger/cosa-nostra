@@ -8,7 +8,10 @@ module.exports = function() {
             .pipe($.autoprefixer({
                 browsers: ['last 2 versions', '> 1%']
             }))
-            .pipe($.cleanCss())
+            .pipe($.cleanCss({
+                keepSpecialComments: 1,
+                roundingPrecision: 5
+            }))
             .pipe($.rename({
                 basename: 'style.min'
             }))
