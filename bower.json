@@ -1,0 +1,22 @@
+{
+  "name": "cosa-nostra",
+  "description": "Landing page for Stayzest's Cosa Nostra project",
+  "main": "index.html",
+  "authors": [
+    "matheusgrieger"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "reset-css": "^2.2.0"
+  }
+}
