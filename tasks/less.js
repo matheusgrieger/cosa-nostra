@@ -11,7 +11,7 @@ module.exports = function() {
             .pipe($.cleanCss({
                 keepSpecialComments: 1,
                 roundingPrecision: 5
-            }))
+            })) 
             .pipe($.rename({
                 basename: 'style.min'
             }))

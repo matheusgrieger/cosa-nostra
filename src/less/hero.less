@@ -1,0 +1,101 @@
+/**
+ * Hero/Intro for the page
+ * Mobile then Desktop
+ */
+.hero {
+    background: #3a2a2a url('images/hero.png') no-repeat center bottom;
+    background-size: 105%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+
+    .logo {
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (orientation: landscape) {
+            top: 30px;
+        }
+    }
+
+    .lead {
+        font-weight: 600;
+        color: #d57a46;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+
+        @media screen and (orientation: landscape) {
+            transform: translate(-50%, -75%);
+        }
+    }
+
+    .animation-wrapper {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        bottom: 0;
+        overflow: hidden;
+        transform: translateX(-50%);
+
+        @media screen and (orientation: landscape) {
+            width: 40%;
+        }
+
+        img {
+            position: absolute;
+            animation-name: heroIntro;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            z-index: 1;
+        }
+
+        .phone {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: -72px;
+            animation-delay: 250ms;
+            z-index: 2;
+        }
+
+        .ss1 {
+            top: 60px;
+            left: 58%;
+            width: 40%;
+            animation-delay: 650ms;
+        }
+
+        .ss2 {
+            top: 12px;
+            left: 50%;
+            margin-left: -47%;
+            width: 40%;
+            animation-delay: 450ms;
+        }
+
+        @keyframes heroIntro {
+            0% {
+                transform: translateY(50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    }
+}
