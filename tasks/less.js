@@ -9,9 +9,8 @@ module.exports = function() {
                 browsers: ['last 2 versions', '> 1%']
             }))
             .pipe($.cleanCss({
-                keepSpecialComments: 1,
                 roundingPrecision: 5
-            })) 
+            }))
             .pipe($.rename({
                 basename: 'style.min'
             }))
