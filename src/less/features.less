@@ -1,0 +1,67 @@
+/**
+ * Game features
+ * Mobile then Desktop
+ */
+
+.features {
+    padding: 50px 80px;
+
+    .title {
+        text-align: center;
+        font-size: 12px;
+        color: #d57a46;
+        font-weight: 400;
+        margin-bottom: 28px;
+
+        strong {
+            font-size: 36px;
+            display: block;
+            color: #000;
+            font-weight: 700;
+        }
+
+        &::before,
+        &::after {
+            content: '\2666';
+            color: #d3d3d3;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &::before {
+            margin-bottom: 8px;
+        }
+
+        &::after {
+            margin-top: 8px;
+        }
+    }
+
+    .feat-list {
+        li {
+            margin: 26px auto;
+            width: 160px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            width: 75%;
+            margin: 0 auto 16px;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #d57a46;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            color: #929292;
+            line-height: 1.2;
+        }
+    }
+}

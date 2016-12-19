@@ -1,0 +1,70 @@
+/**
+ * Video block
+ * Pre-configured iframe & video tags
+ * Mobile then Desktop
+ */
+.video {
+    position: relative;
+    background: url('images/video.jpg') no-repeat center center / cover;
+    padding: 118px 32px 102px;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        background: url('images/video-pattern.png') repeat fade(#3e2c2b, 77%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .text-content {
+        font-size: 22px;
+        color: #ffa572;
+        margin-bottom: 54px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .button {
+        width: 220px;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #3a2a2a;
+        background: #d57a46;
+        text-align: center;
+        text-decoration: none;
+        padding: 16px 0;
+
+        .icon-play-outline {
+            font-size: 28px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+        }
+    }
+
+    .embed {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+}
