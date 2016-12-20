@@ -32,4 +32,80 @@
         text-align: center;
         margin: 20px 0 68px;
     }
+
+    form {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    .input-field {
+        position: relative;
+        width: 100%;
+        margin-bottom: 24px;
+
+        input,
+        textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #3a2a2a;
+            height: 46px;
+            font-size: 18px;
+            font-family: inherit;
+            outline: none !important;
+            transition: border-bottom-color 250ms ease-in-out;
+
+            &:focus {
+                border-bottom-color: fade(#3a2a2a, 50%);
+            }
+
+            &:focus,
+            &.filled {
+                + label {
+                    font-size: 12px;
+                    top: -23px;
+                    opacity: .5;
+                }
+            }
+        }
+
+        textarea {
+            height: 144px;
+            resize: none;
+            padding: 10px 0;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            line-height: 45px;
+            transition: all 250ms ease-in-out;
+        }
+    }
+
+    .submit-btn {
+        font-size: 18px;
+        text-transform: uppercase;
+        background: #3a2a2a;
+        color: #ffa572;
+        width: 115px;
+        height: 56px;
+        border: none;
+        border-radius: 28px;
+        font-weight: 700;
+        display: block;
+        font-family: inherit;
+        margin: 0 auto;
+        cursor: pointer;
+        outline: none !important;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+            background: #ffa572;
+            color: #3a2a2a;
+            width: 200px;
+        }
+    }
 }
