@@ -6,15 +6,95 @@
 .description {
     padding: 46px 32px;
 
+    @media screen and (min-width: 990px) {
+        padding: 46px 0 140px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1090px;
+            height: 575px;
+            background: url('images/description-bg-1.jpg');
+            top: 0;
+            left: 50%;
+            margin-left: -370px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 932px;
+            height: 402px;
+            background: url('images/description-bg-2.jpg');
+            bottom: 0;
+            left: 5%;
+            z-index: -1;
+        }
+    }
+
+    .container {
+        @media screen and (min-width: 990px) {
+            width: 960px;
+            margin: 0 auto;
+
+            &::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+    }
+
     .download-btn {
         display: block;
         width: 172px;
         height: auto;
         margin: 0 auto 77px;
+        text-decoration: none;
+
+        @media screen and (min-width: 990px) {
+            width: 380px;
+            margin: 0 10px 185px auto;
+        }
 
         img {
             display: block;
             width: 100%;
+
+            @media screen and (min-width: 990px) {
+                display: inline-block;
+                vertical-align: top;
+                width: 172px;
+                margin-right: 30px;
+            }
+        }
+
+        .label {
+            display: none;
+            font-size: 24px;
+            color: #7f7f7f;
+            line-height: 1.1;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            @media screen and (min-width: 990px) {
+                display: inline-block;
+                vertical-align: top;;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .left {
+        @media screen and (min-width: 990px) {
+            float: left;
+            width: 380px;
+            margin: 60px 0 0 90px;
         }
     }
 
@@ -40,5 +120,37 @@
         &:first-of-type {
             margin-bottom: 22px;
         }
+    }
+
+    .outro {
+        display: none;
+        font-size: 12px;
+        color: #d57a46;
+        width: 300px;
+        margin-top: 184px;
+
+        &:last-child {
+            margin-top: 10px;
+        }
+
+        sup {
+            font-size: 7px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 990px) {
+            display: block;
+        }
+    }
+
+    .phone {
+        float: right;
+        margin-right: -28px;
+        display: block;
     }
 }

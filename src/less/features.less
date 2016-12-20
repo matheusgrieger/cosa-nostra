@@ -6,6 +6,22 @@
 .features {
     padding: 50px 80px;
 
+    @media screen and (min-width: 990px) {
+        padding: 50px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 471px;
+            height: 531px;
+            background: url('images/gangsters.png');
+            bottom: -476px;
+            left: 50%;
+            position: absolute;
+            z-index: 2;
+        }
+    }
+
     .title {
         text-align: center;
         font-size: 12px;
@@ -36,13 +52,40 @@
         &::after {
             margin-top: 8px;
         }
+
+        @media screen and (min-width: 990px) {
+            font-size: 16px;
+
+            strong {
+                font-size: 60px;
+            }
+
+            &::before,
+            &::after {
+                font-size: 18px;
+            }
+        }
     }
 
     .feat-list {
+        @media screen and (min-width: 990px) {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         li {
             margin: 26px auto;
             width: 160px;
             text-align: center;
+
+            @media screen and (min-width: 990px) {
+                width: 180px;
+                height: 370px;
+                margin: 26px 70px;
+            }
         }
 
         img {
@@ -56,12 +99,20 @@
             font-weight: 700;
             color: #d57a46;
             margin-bottom: 14px;
+
+            @media screen and (min-width: 990px) {
+                font-size: 18px;
+            }
         }
 
         p {
             font-size: 12px;
             color: #929292;
             line-height: 1.2;
+
+            @media screen and (min-width: 990px) {
+                font-size: 14px;
+            }
         }
     }
 }

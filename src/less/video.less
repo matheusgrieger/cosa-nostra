@@ -9,6 +9,10 @@
     padding: 118px 32px 102px;
     z-index: 1;
 
+    @media screen and (min-width: 990px) {
+        padding: 256px 0 206px;
+    }
+
     &::before {
         content: '';
         background: url('images/video-pattern.png') repeat fade(#3e2c2b, 77%);
@@ -27,6 +31,12 @@
         margin-bottom: 20px;
         font-weight: 400;
         line-height: 1.2;
+
+        @media screen and (min-width: 990px) {
+            font-size: 30px;
+            width: 545px;
+            margin: 0 auto 30px;
+        }
     }
 
     .text-content {
@@ -36,6 +46,12 @@
         text-align: center;
         font-weight: 700;
         line-height: 1.2;
+
+        @media screen and (min-width: 990px) {
+            font-size: 48px;
+            width: 780px;
+            margin: 0 auto 90px;
+        }
     }
 
     .button {

@@ -9,6 +9,24 @@
     overflow: hidden;
     padding: 34px 32px 256px;
 
+    @media screen and (min-width: 990px) {
+        padding: 144px 0 108px;
+    }
+
+    .container {
+        @media screen and (min-width: 990px) {
+            width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+    .left {
+        @media screen and (min-width: 990px) {
+            width: 460px;
+            margin-left: 10px;
+        }
+    }
+
     .title {
         font-size: 30px;
         font-weight: 400;
@@ -21,6 +39,14 @@
             font-weight: 700;
             display: block;
         }
+
+        @media screen and (min-width: 990px) {
+            font-size: 36px;
+
+            strong {
+                display: inline-block;
+            }
+        }
     }
 
     .text-content {
@@ -28,6 +54,11 @@
         color: #fff;
         margin-bottom: 40px;
         line-height: 1.2;
+
+        @media screen and (min-width: 990px) {
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 
     .download-btn {
@@ -39,6 +70,10 @@
             display: block;
             width: 100%;
         }
+
+        @media screen and (min-width: 990px) {
+            margin: 0;
+        }
     }
 
     .gangsters {
@@ -48,5 +83,9 @@
         left: 50%;
         margin-left: -133.5px;
         width: 277px;
+
+        @media screen and (min-width: 990px) {
+            display: none;
+        }
     }
 }
