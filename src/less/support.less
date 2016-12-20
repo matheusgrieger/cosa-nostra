@@ -1,0 +1,35 @@
+/**
+ * App support form
+ * Desktop only
+ */
+.support-form {
+    display: none;
+    background: #ffede2;
+    padding: 136px 0 400px;
+
+    @media screen and (min-width: 990px) {
+        display: block;
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 400;
+
+        &::before,
+        &::after {
+            content: '\2666';
+            font-size: 20px;
+            color: #ffa572;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+
+    .subtitle {
+        font-size: 30px;
+        color: #d57a46;
+        text-align: center;
+        margin: 20px 0 68px;
+    }
+}
