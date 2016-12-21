@@ -1,0 +1,71 @@
+/**
+ * Activation page
+ * Mobile then Desktop
+ */
+.activation {
+    padding: 100px 32px;
+    color: #745757;
+    text-align: center;
+
+    @media screen and (min-width: 990px) {
+        padding: 232px 0 366px;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            background: url('images/activation.jpg');
+            width: 932px;
+            height: 341px;
+            margin-left: -300px;
+        }
+
+        .logo {
+            margin-left: -390px;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+
+            &::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+
+        .left {
+            float: left;
+            width: 430px;
+            margin-left: 90px;
+        }
+    }
+
+    .logo {
+        background-image: url('images/logo-dark.svg');
+    }
+
+    .title {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .text-content {
+        font-size: 30px;
+
+        @media screen and (min-width: 990px) {
+            width: 310px;
+        }
+    }
+}
