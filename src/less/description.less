@@ -5,6 +5,7 @@
  */
 .description {
     padding: 46px 32px;
+    overflow: hidden;
 
     @media screen and (min-width: 990px) {
         padding: 46px 0 140px;
@@ -149,8 +150,12 @@
     }
 
     .phone {
-        float: right;
-        margin-right: -28px;
-        display: block;
+        display: none;
+
+        @media screen and (min-width: 990px) {
+            float: right;
+            margin-right: -28px;
+            display: block;
+        }
     }
 }
