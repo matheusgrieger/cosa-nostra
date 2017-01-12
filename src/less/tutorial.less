@@ -1,0 +1,170 @@
+/**
+ * Tutorial page
+ */
+.tutorial {
+    &:extend(.activation);
+
+    @media screen and (min-width: 990px) {
+        &:extend(.activation);
+        padding-top: 42px;
+        padding-bottom: 0;
+
+        .logo {
+            &:extend(.activation .logo);
+        }
+
+        .container {
+            &:extend(.activation .container);
+            width: 790px;
+            margin: 0 auto;
+
+            &::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+
+        .left {
+            &:extend(.activation .left);
+        }
+    }
+
+    .logo {
+        &:extend(.activation .logo);
+    }
+
+    .title {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #d1d3d4;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media screen and (min-width: 990px) {
+            text-align: right;
+            margin-bottom: 135px;
+        }
+    }
+
+    .intro {
+        font-size: 18px;
+        color: #929292;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .steps {
+        width: 100%;
+        background: #fff;
+        padding: 32px 0;
+        font-size: 0;
+        top: 0;
+
+        li {
+            width: ~"calc(100% / 6)";
+            display: inline-block;
+            vertical-align: top;
+            font-size: 18px;
+            text-align: center;
+
+            a {
+                color: #e6e7e8;
+                text-decoration: none;
+                &:hover {
+                    color: #a7a9ac;
+                }
+            }
+        }
+    }
+
+    .step-list {
+        list-style: none;
+        counter-reset: steps;
+
+        .step-item {
+            padding: 40px 0;
+            counter-increment: steps;
+            text-align: center;
+
+            &:last-child {
+                padding-bottom: 400px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    background: url('images/tutorial.jpg');
+                    width: 932px;
+                    height: 341px;
+                    margin-left: -300px;
+                }
+            }
+
+            &:nth-child(even) {
+                background: #ffede2;
+            }
+
+            .step-title {
+                font-size: 36px;
+                color: #3a2a2a;
+                margin-bottom: 64px;
+                font-weight: 700;
+
+                &::before {
+                    content: counter(steps);
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: 2px solid #d57a46;
+                    color: #d57a46;
+                    margin: 0 auto 24px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+
+            > img {
+                display: block;
+                margin: 0 auto 36px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #929292;
+                margin-bottom: 64px;
+                line-height: 1.5;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            .subtitle {
+                font-size: 24px;
+                color: #c17144;
+                margin-bottom: 20px;
+            }
+
+            .back-to-top {
+                font-size: 16px;
+                color: #745757;
+                text-decoration: none;
+                vertical-align: middle;
+                position: absolute;
+                left: 50%;
+                margin-left: -395px;
+                bottom: 200px;
+
+                img {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}

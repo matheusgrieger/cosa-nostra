@@ -13,3 +13,11 @@
         }
     });
 })();
+
+
+/**
+ * Fixed sticky for tutorial
+ */
+(function() {
+    $('.steps.fixedsticky').fixedsticky();
+})();

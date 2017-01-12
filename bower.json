@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "reset-css": "^2.2.0"
+    "reset-css": "^2.2.0",
+    "filament-sticky": "^0.1.7",
+    "jquery": "2"
   }
 }
