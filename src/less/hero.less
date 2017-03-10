@@ -131,8 +131,13 @@
             text-decoration: none;
 
             &.support {
-                border-bottom: 3px solid #c17144;
+                border-bottom: 3px solid transparent;
                 padding-bottom: 4px;
+                transition: border-bottom-color 200ms linear;
+
+                &:hover {
+                    border-bottom-color: #c17144;
+                }
             }
 
             &.facebook {

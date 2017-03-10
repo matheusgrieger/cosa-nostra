@@ -1,3 +1,3 @@
 module.exports = [
-    ['less', 'images', 'fonts', 'js', 'watch']
+    ['less', 'images', 'videos', 'fonts', 'js', 'watch']
 ]

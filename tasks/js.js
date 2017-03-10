@@ -5,6 +5,7 @@ module.exports = function() {
     gulp.src([
             'src/components/jquery/dist/jquery.min.js',
             'src/components/filament-sticky/fixedsticky.js',
+            'src/components/izimodal/js/iziModal.js',
             'src/js/main.js'
         ])
         .pipe($.sourcemaps.init())

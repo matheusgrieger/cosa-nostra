@@ -6,19 +6,44 @@
 .features {
     padding: 50px 80px;
 
+    .animation-wrapper {
+        display: none;
+    }
+
     @media screen and (min-width: 990px) {
         padding: 50px 0;
         position: relative;
 
-        &::after {
-            content: '';
+        .animation-wrapper {
             width: 471px;
             height: 531px;
-            background: url('images/gangsters.png');
             bottom: -476px;
             left: 50%;
             position: absolute;
             z-index: 2;
+            overflow: hidden;
+            display: block;
+
+            img {
+                position: absolute;
+                animation-name: heroIntro;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+
+                &:nth-child(2) {
+                    top: 50px;
+                    left: 60px;
+                    animation-delay: 450ms;
+                }
+
+                &:nth-child(3) {
+                    top: 206px;
+                    left: 68px;
+                    animation-delay: 650ms;
+                }
+            }
         }
     }
 

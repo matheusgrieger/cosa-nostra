@@ -76,13 +76,42 @@
         }
     }
 
-    .gangsters {
-        position: absolute;
-        bottom: -300px;
-        z-index: -1;
-        left: 50%;
-        margin-left: -133.5px;
+    .animation-wrapper {
         width: 277px;
+        height: 312px;
+        bottom: -46px;
+        left: 50%;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        margin-left: -133.5px;
+
+        img {
+            position: absolute;
+            animation-name: heroIntro;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+            &:nth-child(1) {
+                width: 211px;
+            }
+
+            &:nth-child(2) {
+                width: 220px;
+                top: 30px;
+                left: 36px;
+                animation-delay: 450ms;
+            }
+
+            &:nth-child(3) {
+                width: 234px;
+                top: 124px;
+                left: 40px;
+                animation-delay: 650ms;
+            }
+        }
 
         @media screen and (min-width: 990px) {
             display: none;
