@@ -131,21 +131,23 @@
         <section id="support" class="support-form">
             <h3 class="title">App Support</h3>
             <h4 class="subtitle">Say hello!</h4>
-            <form action="">
+            <form onsubmit="return false">
                 <div class="input-field">
-                    <input type="text" name="fullName" id="full-name">
+                    <input type="text" name="fullName" id="full-name" required>
                     <label for="full-name">Full name</label>
                 </div>
                 <div class="input-field">
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                     <label for="email">E-mail</label>
                 </div>
                 <div class="input-field">
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" required></textarea>
                     <label for="message">Message</label>
                 </div>
                 <button type="submit" class="submit-btn">Send</button>
             </form>
+            <div id="success-modal" class="iziModal"></div>
+            <div id="error-modal" class="iziModal"></div>
         </section>
         <footer class="footer">
             <p class="feedback">

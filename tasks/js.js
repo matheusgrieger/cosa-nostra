@@ -6,6 +6,7 @@ module.exports = function() {
             'src/components/jquery/dist/jquery.min.js',
             'src/components/filament-sticky/fixedsticky.js',
             'src/components/izimodal/js/iziModal.js',
+            'src/components/jquery-validation/dist/jquery.validate.js',
             'src/js/main.js'
         ])
         .pipe($.sourcemaps.init())
